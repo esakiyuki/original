@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    background: #fff;
+    font-family: 'M PLUS 1p', 'Hannari', sans-serif;
+}
+
+#header {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.0);
+    /*    opacity: 0;*/
+    /*    background: #fff;*/
+    padding: 6px 0px;
+    /*    position: fixed;*/
+    position: absolute;
+    z-index: 2;
+    display: flex;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    /*    overflow: hidden;*/
+    /*    display: flex;*/
+}
+
+.he-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*    position: relative;*/
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+    margin-top: 2px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav h1 {
+    font-size: 32px;
+    padding: 8px 16px;
+    color: #fff;
+    text-shadow: 1px 1px 1px white;
+}
+
+nav a {
+    font-style: 16px;
+    /*    display: inline-block;*/
+    text-decoration: none;
+    color: white;
+    margin: 14px 16px 0px;
+    transition: 0.3;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: blue;
+    transition: 1s;
+}
+
+.main-visual {
+    width: 100vw;
+    height: 600px;
+    background: url(../img/hero.jpg) 0 0 no-repeat;
+    padding-top: 60px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    position: absolute;
+    overflow: hidden;
+*/
+}
+
+.main-visual img {
+    width: 900px;
+    /*    margin: 0 auto;*/
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-visual p {
+    color: #fff;
+    font-size: 40px;
+    width: 600px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 16px;
+    color: black;
+}
+
+#main {
+    /*    width: 700px;*/
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    /*    padding: 16px;*/
+    /*    float: left;*/
+    /*
+    display: flex;
+    text-align: center;
+    align-items: center;
+*/
+}
+
+.content-Introduction {
+    /*    border-bottom: 50px solid #f5f5f5;*/
+    /*    width: 300px;*/
+    background-color: #fff;
+    /*    width: 100%;*/
+    /*    height: 700px;*/
+    position: relative;
+    /*    margin: auto;*/
+    /*    padding :50px;*/
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    /*    background-color: #fff;*/
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content-Introduction img {
+    float: left;
+    padding-right: 90px;
+    /*    padding-top: 40px;*/
+    /*    padding-left: 130px;*/
+    /*    padding-right: 150px;*/
+    /*    padding-left: 100px;*/
+}
+
+.top-title {
+    /*    width: 140px;*/
+    text-align: center;
+    color: blue;
+    font-size: 36px;
+    /*    margin: 0 auto;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px;
+}
+
+.text {
+    float: left;
+    /*    padding-top: 45px;*/
+    padding-right: 150px;
+    padding-left: 140px;
+
+}
+
+.text h2 {
+    padding-bottom: 30px;
+    color: blue;
+}
+
+.right-box {
+    height: 350px;
+    /*    width: 390px;*/
+    float: left;
+}
+
+.right-box a {
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-decoration: none;
+    margin-left: 120px;
+}
+
+.right-box a:hover {
+    box-shadow: 3px 3px 10px 10px rgba(0,0,0,0.1);
+}
+
+.right-box p {
+    line-height: 30px;
+}
+
+.left-box {
+    float: left;
+    padding-right: 82px;
+}
+
+.left-box a {
+    color: #fff;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-decoration: none;
+    margin-left: 120px;
+}
+
+.left-box a:hover {
+    box-shadow: 3px 3px 10px 10px rgba(0,0,0,0.1);
+}
+
+.left-box p {
+    line-height: 30px;
+}
+
+.content-Corses {
+    /*    width: 1500px;*/
+    height: 900px;
+}
+
+.top-article {
+    /*    margin-left: 50px;*/
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.article {
+    width: 230px;
+    background-color: #fff;
+    height: 340px;
+    float: left;
+    /*    margin: 0 auto;*/
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 9px;
+}
+
+.article iframe {
+    margin: 20px;
+}
+
+.article a {
+    color: #fff;
+    /*    background-color: blue;*/
+    border-radius: 10px;
+    padding: 10px 20px;
+    /*    box-shadow: 10px;*/
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.top-article a:hover {
+    box-shadow: 3px 3px 10px 10px rgba(0,0,0,0.1);
+}
+
+.article img {
+    padding: 30px 65px;
+    /*    margin: 0 auto;*/
+}
+
+.article-img {
+    width: 200px;
+    height: 210px;
+}
+
+.article h2 {
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+#HTML {
+    background-color: orange;
+}
+
+#CSS {
+    background-color: skyblue;
+}
+
+#unity {
+    background-color: black;
+}
+
+#ruby {
+    background-color: red;
+}
+
+#JS {
+    background-color: yellow;
+}
+
+#Swift {
+    background-color: orange;
+}
+
+#go {
+    background-color: skyblue;
+}
+
+.top-box {
+    margin: 0 auto;
+    position: relative;
+}
+
+#particles-js {
+    height: 900px;
+    width: 100%;
+    background-color: skyblue;
+    overflow: hidden;
+    /*
+    display: flex;
+    flex-direction: row;
+*/
+}
+
+#particles-js canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content-Images {
+    /*    width: 800px;*/
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-item img {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.content-Access iframe {
+    padding-bottom: 50px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    /*    padding: 100px;*/
+}
+
+footer {
+    text-align: center;
+    color: blue;
+}
+
+.slick-dotted {
+    padding: 0 !important;
+}
