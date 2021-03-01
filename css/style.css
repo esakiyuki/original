@@ -20,7 +20,6 @@ p {
 body {
     width: 100vw;
     background: #fff;
-    /*    min-width: 1024px;*/
 }
 
 #header {
@@ -121,7 +120,6 @@ nav a:hover {
 .bg-slider p {
     color: #fff;
     font-size: 40px;
-    width: 600px;
     text-align: center;
     font-family: "Futura";
     font-style: italic;
@@ -490,7 +488,7 @@ footer {
     }
 
     .single-item img {
-        width: 80px;
+        width: 300px;
     }
     
 
