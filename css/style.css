@@ -44,18 +44,20 @@ body {
 }
 
 .main-visual {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(img/haikei.png);
+    width: 100%;
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+    background-image: url(/img/top.png);
     background-position: center center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #c1c1c1;
 }
 
 .main-visual img {
-    width: 900px;
+    height: 615px;
     text-align: center;
     position: relative;
 }
@@ -71,11 +73,24 @@ body {
     letter-spacing: 5px;
 }
 
-/*
 .content-about {
-    background-image: url(img/haikei.png);
+    padding-top: 95px;
+    padding-bottom: 25px;
+    background-color: #c1c1c1;
+    background-image: url(img/top.png);
 }
-*/
+
+.top-title-about {
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 35px;
+    letter-spacing: 5px;
+    color: white;
+}
 
 .content-about h3 {
     font-size: 16px;
@@ -83,6 +98,7 @@ body {
     padding: 60px 60px 120px 60px;
     line-height: 50px;
 /*    letter-spacing: 5px;*/
+    color: white;
 }
 
 .content-what h3 {
@@ -95,7 +111,7 @@ body {
 
 .content-what img {
     height: 350px;
-    padding: 80px 165px;
+    padding: 85px 165px;
 }
 
 .content-type {
