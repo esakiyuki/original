@@ -9,11 +9,11 @@
 }
 
 body {
-/*    width: 100vw;*/
+    /*    width: 100vw;*/
 }
 
 #header {
-/*
+    /*
     width: 100%;
     background: rgba(0, 0, 0, 0.0);
     padding: 10px 0px;
@@ -36,7 +36,7 @@ body {
 }
 
 .header-wrapper {
-/*
+    /*
     width: 90%;
     margin: 0 auto;
     position: relative;
@@ -44,10 +44,9 @@ body {
 }
 
 .main-visual {
-    width: 100%;
-/*    width: 100vw;*/
-/*    height: 100vh;*/
+    height: 100vh;
     background-image: url(/img/top.png);
+    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -57,7 +56,8 @@ body {
 }
 
 .main-visual img {
-    height: 615px;
+    /*    height: 615px;*/
+    height: 100vh;
     text-align: center;
     position: relative;
 }
@@ -77,7 +77,6 @@ body {
     padding-top: 95px;
     padding-bottom: 25px;
     background-color: #c1c1c1;
-    background-image: url(img/top.png);
 }
 
 .top-title-about {
@@ -97,7 +96,7 @@ body {
     text-align: center;
     padding: 60px 60px 120px 60px;
     line-height: 50px;
-/*    letter-spacing: 5px;*/
+    /*    letter-spacing: 5px;*/
     color: white;
 }
 
@@ -110,13 +109,15 @@ body {
 }
 
 .content-what img {
-    height: 350px;
+    /*    height: 350px;*/
+    height: 57vh;
     padding: 85px 165px;
 }
 
 .content-type {
     background-color: #f2eee2;
-    height: 630px;
+    /*    height: 630px;*/
+    height: 100vh;
 }
 
 .content-type h3 {
@@ -125,6 +126,15 @@ body {
     color: #c1c1c1;
     letter-spacing: 3px;
     padding-top: 5px;
+}
+
+.instagram-media {
+    float: left;
+}
+
+.content-work {
+    /*    height: 1300px;*/
+    height: 220vh;
 }
 
 .content-work h3 {
@@ -137,7 +147,8 @@ body {
 
 .single-item img {
     margin: 0 auto;
-    height:  450px;
+    /*    height: 450px;*/
+    height: 75vh;
 }
 
 .content-storage {
@@ -153,7 +164,8 @@ body {
 }
 
 .content-storage img {
-    height: 380px;
+    /*    height: 380px;*/
+    height: 61vh;
     padding: 80px 125px;
 }
 
@@ -168,6 +180,4 @@ footer {
 }
 
 /*スマホ*/
-@media screen and (max-width: 480px) {
-    
-}
+@media screen and (max-width: 480px) {}
