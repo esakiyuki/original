@@ -53,8 +53,8 @@ body {
 }
 
 .main-visual img {
-    /*    height: 615px;*/
-    height: 100vh;
+    height: 370px;
+    /*    height: 100vh;*/
     text-align: center;
     position: relative;
 }
@@ -73,8 +73,8 @@ body {
 .content-about {
     padding-top: 95px;
     padding-bottom: 25px;
-/*    background-color: #c1c1c1;*/
-/*    opacity: 0.5;*/
+    /*    background-color: #c1c1c1;*/
+    /*    opacity: 0.5;*/
 }
 
 .top-title-about {
@@ -111,15 +111,19 @@ body {
 }
 
 .content-what img {
-    /*    height: 350px;*/
-    height: 57vh;
-    padding: 85px 165px;
+    height: 350px;
+    /*    height: 57vh;*/
+    /*    padding: 85px 165px;*/
+    margin: 0 auto;
+    display: flex;
+    padding-top: 87px;
+    padding-bottom: 87px;
 }
 
 .content-type {
     background-color: #f2eee2;
-    /*    height: 630px;*/
-    height: 100vh;
+    height: 630px;
+    /*    height: 100vh;*/
     width: 100%;
     margin: 0 auto;
 }
@@ -137,8 +141,8 @@ body {
 }
 
 .content-work {
-    /*    height: 1300px;*/
-    height: 220vh;
+    height: 1300px;
+    /*    height: 220vh;*/
     background-color: white;
 }
 
@@ -151,19 +155,19 @@ body {
 }
 
 .slick-next {
-/*    transform: translate(-10%,-50%);*/
+    /*    transform: translate(-10%,-50%);*/
     left: 85%;
 }
 
 .slick-prev {
-/*    transform: translate(-10%,-50%);*/
+    /*    transform: translate(-10%,-50%);*/
     left: 15%;
 }
 
 .single-item img {
     margin: 0 auto;
-    /*    height: 450px;*/
-    height: 75vh;
+    height: 450px;
+    /*    height: 75vh;*/
 }
 
 .content-storage {
@@ -179,9 +183,13 @@ body {
 }
 
 .content-storage img {
-    /*    height: 380px;*/
-    height: 61vh;
-    padding: 80px 125px;
+    height: 380px;
+    /*    height: 61vh;*/
+    /*    padding: 80px 125px;*/
+    margin: 0 auto;
+    display: flex;
+    padding-top: 82px;
+    padding-bottom: 82px;
 }
 
 footer {
@@ -194,5 +202,70 @@ footer {
     padding: 0 !important;
 }
 
+.pc {
+    display: block !important;
+}
+
+.sp {
+    display: none !important;
+}
+
 /*スマホ*/
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+    }
+
+    .content-what img {
+        height: 950px;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    
+    .content-type h3 {
+        padding-bottom: 50px;
+    }
+
+    .content-type {
+        height: 750px;
+    }
+
+    .content-storage img {
+        height: 640px;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .main-visual img {
+        height: 300px;
+    }
+
+    .content-work {
+        height: 3500px;
+    }
+
+    .main-wrapper {
+        background-image: url(/img/SP_haikei.png);
+    }
+
+    .content-about {
+        padding-top: 95px;
+        padding-bottom: 130px;
+    }
+
+    .slick-next {
+        left: 90%;
+    }
+
+    .slick-prev {
+        left: 7%;
+    }
+}
