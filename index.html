@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>大人の子どもあそび</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
 
+   
+    <div class="loader-wrap">
+        <div class="loader">Loading...</div>
+    </div>
+
+   
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -50,20 +57,20 @@
             <div class="wrapper">
                 <h2 class="top-title">樹脂粘土の種類</h2>
                 <h3>type</h3>
-                
+
                 <ul class="single-item">
                     <li><img class="pc" alt="img1" src="img/modena.png"></li>
                     <li><img class="pc" alt="img2" src="img/sukerukun.png"></li>
                     <li><img class="pc" alt="img3" src="img/grace.png"></li>
                     <li><img class="pc" alt="img4" src="img/cosmos.png"></li>
-                    
+
                     <li><img class="sp" alt="img1" src="img/SP_modena.png"></li>
                     <li><img class="sp" alt="img2" src="img/SP_sukerukun.png"></li>
                     <li><img class="sp" alt="img3" src="img/SP_grace.png"></li>
                     <li><img class="sp" alt="img4" src="img/SP_cosmos.png"></li>
                 </ul>
 
-<!--
+                <!--
                 <ul class="sp" class="single-item">
                     <li><img class="sp" alt="img1" src="img/SP_modena.png"></li>
                     <li><img class="sp" alt="img2" src="img/SP_sukerukun.png"></li>
@@ -412,5 +419,23 @@
             arrows: true,
         });
     </script>
+
+
+    <script>
+        $(function() {
+            var loader = $('.loader-wrap');
+
+            //ページの読み込みが完了したらアニメーションを非表示
+            $(window).on('load', function() {
+                loader.fadeOut();
+            });
+
+            //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+            setTimeout(function() {
+                loader.fadeOut();
+            }, 3000);
+        });
+    </script>
+
 
 </body></html>

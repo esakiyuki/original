@@ -19,6 +19,8 @@
 .slick-prev,
 .slick-next
 {
+    z-index: 10;
+    
     font-size: 0;
     line-height: 0;
 
@@ -47,6 +49,8 @@
 .slick-next:hover,
 .slick-next:focus
 {
+    z-index: 10;
+    
     color: transparent;
     outline: none;
     background: transparent;
@@ -56,17 +60,23 @@
 .slick-next:hover:before,
 .slick-next:focus:before
 {
+    z-index: 10;
+    
     opacity: 1;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
+    z-index: 10;
+    
     opacity: .25;
 }
 
 .slick-prev:before,
 .slick-next:before
 {
+    z-index: 10;
+    
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
@@ -80,6 +90,8 @@
 
 .slick-prev
 {
+    z-index: 10;
+    
     left: -25px;
 }
 [dir='rtl'] .slick-prev
