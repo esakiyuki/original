@@ -6,20 +6,19 @@
     <title>大人の子どもあそび</title>
     <link rel="shortcut icon" href="img/favicon.ico">
 
-   
-    <div class="loader-wrap">
-        <div class="loader">Loading...</div>
-    </div>
-
-   
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
+    <div class="loader-wrap">
+        <div class="loader">Loading...</div>
+    </div>
+
     <div class="main-wrapper">
         <div id="header">
             <div class="header-wrapper">
@@ -48,7 +47,20 @@
             <div class="wrapper">
                 <h2 class="top-title">樹脂粘土とは</h2>
                 <h3>what</h3>
-                <img class="pc" src="img/what.png">
+                <div class="what">
+                    <div class="img-box">
+                        <img class="pc" src="img/kaimnenndo.png">
+                        <img class="pc" id="kaminenndo" src="img/hover_kaminenndo.png">
+                    </div>
+                    <div class="img-box">
+                        <img class="pc" src="img/aburanenndo.png">
+                        <img class="pc" id="aburanenndo" src="img/hover_aburanenndo.png">
+                    </div>
+                    <div class="img-box">
+                        <img class="pc" src="img/jyushinenndo.png">
+                        <img class="pc" id="jyushinenndo" src="img/hover_jyushinenndo.png">
+                    </div>
+                </div>
                 <img class="sp" src="img/SP_what.png">
             </div>
         </section>
@@ -426,9 +438,9 @@
             var loader = $('.loader-wrap');
 
             //ページの読み込みが完了したらアニメーションを非表示
-            $(window).on('load', function() {
-                loader.fadeOut();
-            });
+            //            $(window).on('load', function() {
+            //                loader.fadeOut();
+            //            });
 
             //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
             setTimeout(function() {
