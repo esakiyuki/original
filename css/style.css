@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .loader-wrap {
@@ -107,6 +108,14 @@ body {
 
 .main-wrapper {
     background-image: url(/img/top.png);
+/*
+    background-size: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+*/
+    
+    /*    background-size: cover;*/
+    /*    background-image: 100%;*/
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -132,9 +141,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+/*    position: absolute;*/
 }
 
 .main-visual img {
+/*    height: 40%;*/
     height: 400px;
     /*    height: 100vh;*/
     text-align: center;
@@ -183,13 +194,13 @@ body {
 }
 
 .what img {
-    height: 330px;
+    height: 230px;
     margin: 0 auto;
     display: flex;
 }
 
 .what {
-    padding: 110px;
+    padding: 90px 130px;
     margin: 0 auto;
     display: flex;
 }
@@ -202,10 +213,16 @@ body {
     padding-top: 5px;
 }
 
-.img-box {
+.big-box {
     position: relative;
-    display: flex;
     margin: 0 auto;
+}
+
+.what p {
+    text-align: center;
+    padding-top: 30px;
+    line-height: 28px;
+    font-size: 14px;
 }
 
 .img-box #kaminenndo {
@@ -244,32 +261,9 @@ body {
     opacity: 1;
 }
 
-/*
-#kaminenndo {
-    opacity: 0;
-}
-
-#aburanenndo {
-    opacity: 0;
-}
-
-#jyushinenndo {
-    opacity: 0;
-}
-*/
-
-/*
-.content-what img {
-    height: 350px;
-    margin: 0 auto;
-    display: flex;
-    padding-top: 87px;
-    padding-bottom: 87px;
-}
-*/
-
 .content-type {
     background-color: #f2eee2;
+/*    width: 100%;*/
     height: 630px;
     /*    height: 100vh;*/
     width: 100%;
@@ -277,31 +271,6 @@ body {
 }
 
 .content-type h3 {
-    font-size: 13px;
-    text-align: center;
-    color: #c1c1c1;
-    letter-spacing: 3px;
-    padding-top: 5px;
-}
-
-.instagram-media {
-/*    float: left;*/
-}
-
-.content-work {
-    height: 1300px;
-    /*    height: 220vh;*/
-    background-color: white;
-}
-
-.wrapper-work {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.content-work h3 {
     font-size: 13px;
     text-align: center;
     color: #c1c1c1;
@@ -324,22 +293,56 @@ body {
     /*    height: 75vh;*/
 }
 
+/*
+.instagram-media {
+    width: 30px;
+    padding: 30px;
+    margin: 30px;
+}
+*/
+
+.content-work {
+/*    height: 1300px;*/
+    /*    height: 220vh;*/
+    background-color: white;
+    padding-bottom: 27px;
+}
+
+.wrapper-work {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-work h3 {
+    font-size: 13px;
+    text-align: center;
+    color: #c1c1c1;
+    letter-spacing: 3px;
+    padding-top: 5px;
+}
+
 .content-work h3 {
     padding-bottom: 60px;
 }
 
 .top {
-/*    margin: 0 auto;*/
+    /*    margin: 0 auto;*/
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
 .botton {
-/*    margin: 0 auto;*/
+    /*    margin: 0 auto;*/
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+.insta {
+    padding: 23px;
 }
 
 .content-storage {
@@ -364,14 +367,14 @@ body {
     padding-bottom: 82px;
 }
 
+.slick-dotted {
+    padding: 0 !important;
+}
+
 footer {
     text-align: center;
     font-family: "Futura";
-    margin-bottom: 50px;
-}
-
-.slick-dotted {
-    padding: 0 !important;
+    margin: 50px;
 }
 
 .pc {
@@ -408,13 +411,17 @@ footer {
     .what {
         padding: 0px;
     }
+    
+    .what p {
+        display: none;
+    }
 
     .content-type h3 {
         padding-bottom: 50px;
     }
 
     .content-type {
-        height: 750px;
+        height: 660px;
     }
 
     .content-storage img {
@@ -429,9 +436,11 @@ footer {
         height: 300px;
     }
 
+/*
     .content-work {
         height: 3500px;
     }
+*/
 
     .main-wrapper {
         background-image: url(/img/SP_haikei.png);
@@ -448,15 +457,6 @@ footer {
 
     .slick-prev {
         left: 7%;
-    }
-    
-    .box {
-        padding-left: 23px;
-        padding-right: 23px;
-/*
-        margin: 0 auto;
-        display: flex;
-*/
     }
 
     .top {
